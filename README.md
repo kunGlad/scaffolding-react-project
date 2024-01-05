@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npm run dev `
 
+只有这个命令可以正确执行 其他的都会报错 不知道为什么 反正就是测试用的 也无所谓
+
 Runs the app in the development mode.\
 Open [http://localhost:8081](http://localhost:8081) to view it in your browser.
 
