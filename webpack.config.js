@@ -48,9 +48,20 @@ module.exports = {
         exclude: /node_modules/,
       },
       // 在终端执行npm link loader-demo 后 再启动项目 npm run dev 就可以看到我们自己写的 去除console 的loader就完成了
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   use: { loader: "loader-demo" },
+      //   exclude: /node_modules/,
+      // },
+
       {
-        test: /\.(js|jsx)$/,
-        use: { loader: "loader-demo" },
+        test: /\.js$/,
+        use: {
+          loader: "loader-demo",
+          options: {
+            sign: "这是zk的测试loader",
+          },
+        },
         exclude: /node_modules/,
       },
     ],
