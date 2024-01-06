@@ -4,6 +4,8 @@ const webpack = require("webpack");
 
 const HtmlPlugin = require("html-webpack-plugin");
 
+const FileListPlugin = require("./plugin/FileListPlugin");
+
 module.exports = {
   devtool: "inline-source-map",
 
@@ -83,5 +85,7 @@ module.exports = {
     new HtmlPlugin({
       template: "public/index.html",
     }),
+
+    new FileListPlugin("文件列表.md"),
   ],
 };
